@@ -20,9 +20,9 @@ It also has nice clear output. Here is a example from the sample unit test in th
 
 CTEST has its own test runner and, as already stated, it is standalone and doesn't need external scaffolding apart from a simple `main()`.
 
-Nevertheless, the example shown here used [`Pytest`][4] as a test runner for CTEST. This offers a small amount of additional functionality to CTEST and it presented mainly as a proof of concept.
+Nevertheless, the example shown here used [`Pytest`][4] as a test runner for CTEST. This offers a small amount of additional functionality to CTEST and is presented mainly as a proof of concept.
 
-`Pytest` is a really nice Python testing tool. It has great [documentation][5], clean code, lots of tests, a large but clear set of options for running tests, and collecting results and best of all it is easily extensible.
+`Pytest` is a really nice Python testing tool. It has great [documentation][5], clean code, lots of tests, a large but clear set of options for running tests and collecting results and best of all it is easily extensible.
 
 Pytest supports the creation of hooks in a file called `conftest.py`. This allows you to define, in Python, code to find test files, run them, and collect the results. The nice thing about this is that you can create a hook layer between pytest and the CTEST unit tests without changing code in either one.
 
