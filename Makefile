@@ -15,7 +15,7 @@ endif
 
 # Build the test executables.
 all :
-	$(Q)make -C ctest
+	$(Q)CTEST_COLOR_OK=1 make -C ctest
 
 # Clean the test executables.
 clean :
@@ -23,7 +23,7 @@ clean :
 
 # Run the ctest unit tests.
 test : all
-	$(Q)make test -C ctest
+	$(Q)ctest/test
 
 pytest : all
-	$(Q)py.test test -v
+	$(Q)py.test -v

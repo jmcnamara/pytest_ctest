@@ -1,0 +1,3 @@
+[submodule "ctest"]
+	path = ctest
+	url = git@github.com:bvdberg/ctest.git
